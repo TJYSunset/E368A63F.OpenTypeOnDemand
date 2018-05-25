@@ -206,7 +206,7 @@ namespace E368A63F.FreeTypeOnDemand
                                     var render = new Texture2D(graphicsDevice,
                                         bitmap.Width,
                                         bitmap.Rows, false,
-                                        SurfaceFormat.ColorSRgb);
+                                        SurfaceFormat.Color);
                                     render.SetData(bitmap.BufferData.SelectMany(x => new[] {x, x, x, x}).ToArray());
                                     Cache[cacheIndex] = render;
                                     yield return (render,
