@@ -1,6 +1,6 @@
 ## OpenTypeOnDemand
 
-Some sort of text layout engine for MonoGame (DirectX), using FreeType & HarfBuzz.
+Some sort of text layout engine for MonoGame (DirectX), using FreeType.
 
 Draws text and returns list of textures.
 

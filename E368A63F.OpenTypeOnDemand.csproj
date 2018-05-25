@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\SharpFont.HarfBuzz.0.1.1\build\SharpFont.HarfBuzz.props" Condition="Exists('..\packages\SharpFont.HarfBuzz.0.1.1\build\SharpFont.HarfBuzz.props')" />
   <Import Project="..\packages\SharpFont.4.0.1\build\SharpFont.props" Condition="Exists('..\packages\SharpFont.4.0.1\build\SharpFont.props')" />
   <Import Project="..\packages\SharpFont.Dependencies.2.6\build\SharpFont.Dependencies.props" Condition="Exists('..\packages\SharpFont.Dependencies.2.6\build\SharpFont.Dependencies.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -48,9 +47,6 @@
     <Reference Include="SharpFont, Version=4.0.1.200, Culture=neutral, PublicKeyToken=48add4c483071cdf, processorArchitecture=MSIL">
       <HintPath>..\packages\SharpFont.4.0.1\lib\net45\SharpFont.dll</HintPath>
     </Reference>
-    <Reference Include="SharpFont.HarfBuzz, Version=0.1.0.0, Culture=neutral, PublicKeyToken=7f22260154a89e6f, processorArchitecture=MSIL">
-      <HintPath>..\packages\SharpFont.HarfBuzz.0.1.1\lib\net20\SharpFont.HarfBuzz.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.ValueTuple">
@@ -89,6 +85,5 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\SharpFont.Dependencies.2.6\build\SharpFont.Dependencies.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SharpFont.Dependencies.2.6\build\SharpFont.Dependencies.props'))" />
     <Error Condition="!Exists('..\packages\SharpFont.4.0.1\build\SharpFont.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SharpFont.4.0.1\build\SharpFont.props'))" />
-    <Error Condition="!Exists('..\packages\SharpFont.HarfBuzz.0.1.1\build\SharpFont.HarfBuzz.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SharpFont.HarfBuzz.0.1.1\build\SharpFont.HarfBuzz.props'))" />
   </Target>
 </Project>
